@@ -1,0 +1,424 @@
+html{
+    font-family: sans-serif;
+}
+
+@font-face {
+    font-family: 'gotham black';
+    src: url('../../fontes/gotham-black.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+span{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+
+#top {
+    background-color: black;
+}
+.container-title{
+    align-items: center;    
+    flex:1;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.container-title1{
+    align-items: center;
+}
+
+.title1{
+    font-family: "gotham black";
+    font-size: 100px; 
+    margin-bottom: -35px; 
+    font-weight:900; 
+    color:rgb(255,200,36)
+}
+
+.container-title2{
+    margin-top: -40px;
+}
+
+.title2{
+    font-family: "gotham black";
+    font-size: 67px;      
+    letter-spacing:-0.05em
+}
+
+.container-title3{
+    width: 70%;
+    margin-left: 15%;
+}
+.title3{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container-title4-legends-top{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    margin-top: 50px;
+}
+
+.container-title4-legends-bottom{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;     
+}
+
+.container-title4-texts{
+    width: 140px;
+    display: flex; 
+    flex-direction: column
+}
+
+.title4-text-title-legends{
+    font-size: 18px; 
+    font-weight: bold; 
+    color: #A0A09F
+}
+
+.title4-text-legends{
+    font-size: 14px;     
+    color: #A0A09F
+}
+
+.title4-graphic{
+    display: flex; 
+    align-items: center; 
+    justify-content:center; 
+    flex-direction: row;
+}
+
+.line-graphic{
+    width: 100px; 
+    border: 2px solid; 
+    color: #CCCCCC;     
+}
+
+.circle-graphic{
+    width: 40px; 
+    height: 40px;        
+    background-color: #CCCCCC;
+    border-radius: 40px;
+}
+
+.container-description-title1{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 75%;
+    text-align: center;
+}
+
+.description-title1{
+    font-size: 28px; 
+    font-weight: 900;
+}
+
+.container-description1{
+    margin-bottom: 20px;
+    width: 70%;
+}
+
+.text-description1{
+    font-size: 18px;
+}
+
+.image-quadrante{
+    width: 448px;
+    height: 499px;    
+}
+
+.container-description2-title{
+    margin-bottom: 20px; 
+    text-align: center; 
+    justify-content: center
+}
+
+.description2-title-text{
+    font-family: 'gotham black';
+    font-size: 51px; 
+    font-weight: bold; 
+    line-height: 0.8em
+}
+
+.container-description2{
+    flex-direction: row;
+    width: 85%;    
+}
+
+.container-description2-text{
+    margin-bottom: 20px
+}
+
+.description2-text{
+    font-size: 18px
+}
+
+.container-description3-title{
+    margin-top: 50px;
+    text-align: center; 
+    margin-bottom: 20px;
+    width: 70%;    
+}
+
+.description3-title{
+    font-family: 'gotham black';
+    font-size: 53px; 
+    font-weight: 900;     
+    line-height: 0.9em;
+}
+
+.container-description3-text{
+    text-align: center; 
+    margin-bottom: 20px;
+    width: 70%;
+    text-align: justify;
+}
+
+.description3-text{
+    font-size: 18px; 
+    text-align: justify
+}
+
+.container-description4{    
+    margin: 20px; 
+    text-align: center; 
+    margin-bottom: 20px;    
+    width: 55%;
+}
+
+.description4-text{    
+    font-size: 32px; 
+    font-weight: bold;     
+    letter-spacing: 0em; 
+    line-height: 1em;
+}
+
+.container-description5{    
+    margin-top: 20px;
+    width: 70%;
+}
+
+.description5-text{
+    font-size: 18px
+}
+
+.button-next{
+    font-size: 40px; 
+    font-weight: 900;
+    margin: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.description-text6{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+@media (max-width: 992px) {
+
+    .container-title{
+        align-items: center;    
+        flex:1;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    .title1{
+        font-family: 'gotham black';
+        font-size: 55px; 
+        margin-bottom: -30px; 
+        font-weight:900; 
+        color:rgb(255,200,36)
+    }
+
+    .container-title2{
+        margin-top: -25px;
+    }
+
+    .title2{
+        font-family: 'gotham black';
+        font-size: 40px;  
+        font-family: "gotham black";
+        letter-spacing:-0.05em
+    }
+
+    .container-title3{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .title3{
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .container-title4-legends-top{
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        margin-top: 50px;        
+        margin-bottom: 0px;        
+        margin-left: 170px;        
+    }
+
+    .container-title4-legends-bottom{
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center;
+        margin-top: -240px;
+        margin-left: 20px;
+    }
+    
+    .container-title4-texts{
+        height: 65px;
+        display: flex; 
+        flex-direction: column
+    }
+
+    .title4-graphic{        
+        display: flex; 
+        align-items: center; 
+        justify-content:center; 
+        flex-direction: column;
+        margin-top: -260px;
+    }
+
+    .line-graphic{
+        width: 2px;
+        height: 45px; 
+        border: 2px solid; 
+        color: #CCCCCC; 
+        margin: -10px;
+    }
+    
+    .circle-graphic{
+        width: 40px; 
+        height: 40px;        
+        background-color: #CCCCCC;
+        border-radius: 40px;
+    }
+
+    .container-description-title1{
+        margin-top: 40px;
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .description-title1{
+        font-size: 22px; 
+        font-weight: 900;
+    }
+
+    .container-description1{
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: justify;
+    }
+    
+    .text-description1{
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .container-description2{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    .container-description2-title{
+        margin-bottom: 20px; 
+        text-align: center; 
+        justify-content: center;
+        margin-bottom: 400px;
+        margin-top: -420px;
+    }
+    
+    .description2-title-text{
+        font-family: 'gotham black';
+        font-size: 30px; 
+        font-weight: bold; 
+        line-height: 0.8em
+    }
+
+    .container-description2-text{
+        margin-bottom: 20px
+    }
+    
+    .description2-text{
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .container-description3-title{
+        margin-top: 50px;
+        text-align: center; 
+        margin-bottom: 20px;
+        width: 100%;    
+    }
+    
+    .description3-title{
+        font-family: 'gotham black';
+        font-size: 35px; 
+        font-weight: 900;     
+        line-height: 0.9em;
+    }
+    
+    .container-description3-text{
+        margin-top: 30px;
+        text-align: center; 
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: justify;
+    }
+    
+    .description3-text{
+        font-size: 18px; 
+        text-align: justify
+    }
+
+    .container-description4{    
+        margin: 20px; 
+        text-align: center; 
+        margin-bottom: 20px;    
+        width: 90%;        
+    }
+    
+    .description4-text{    
+        font-size: 26px; 
+        font-weight: bold;     
+        letter-spacing: 0em; 
+        line-height: 1em;
+    }
+
+    .container-description5{    
+        margin-top: 20px;
+        width: 100%;
+        text-align: justify;
+    }
+    
+    .description5-text{
+        font-size: 18px
+    }
+
+    .image-quadrante{
+        margin-top: 100px;
+        width: 350px;
+        height: 350px;    
+    }
+
+    .button-next{
+        font-size: 26px; 
+        font-weight: 900;
+        margin: 10px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    
+}

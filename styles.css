@@ -5,6 +5,19 @@ html{
 #top {
     background-color: black;   
 }
+
+@font-face {
+    font-family: 'gotham black';
+    src: url('/fontes/gotham-black.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+span{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+
 .back-image{
     margin-bottom: -400px; 
     filter:blur(1.5px); 
@@ -24,12 +37,14 @@ html{
     margin-bottom: -25px;
 }
 .title1{
+    font-family: 'gotham black';
     font-size: 63px;
     color: white;
     letter-spacing:-0.05em;
     text-align: center;        
 }
 .title2{
+    font-family: 'gotham black';
     font-size: 100px;
     font-weight:900; 
     color:rgb(255,200,36); 
@@ -38,6 +53,7 @@ html{
 }
 
 .title3{
+    font-family: 'gotham black';
     font-size: 100px;
     font-weight:900; 
     color:rgb(255,200,36); 
@@ -70,6 +86,7 @@ html{
 }
 
 .text-describe1{
+    font-family: 'gotham black';
     font-size: 59px; 
     font-weight: 900; 
     color: rgb(255,200,36); 
@@ -126,20 +143,20 @@ html{
         margin-top: -80px;
     }
     .container-title1{
-        margin-top: 80px;
+        margin-top: 150px;
         margin-bottom: -25px;
     }
     .title1{
-        font-size: 40px;
+        font-size: 30px;
         margin-bottom: 0;
         margin-bottom: -25px;
     }
     .title2{        
-        font-size: 85px;
+        font-size: 70px;
         line-height: 130px;
     }
     .title3{
-        font-size: 85px;
+        font-size: 70px;
         line-height: 40px;        
     }
     .container-title-text1{
