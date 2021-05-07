@@ -4,7 +4,7 @@ html{
 
 @font-face {
     font-family: 'gotham black';
-    src: url('../../fontes/gotham-black.otf') format('opentype');
+    src: url('https://paginas-recrutador.s3.amazonaws.com/gotham-black.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -49,6 +49,7 @@ span{
 .container-title3{
     width: 70%;
     margin-left: 15%;
+    line-height: 30px
 }
 .title3{
     font-size: 25px;
@@ -71,7 +72,8 @@ span{
 .container-title4-texts{
     width: 140px;
     display: flex; 
-    flex-direction: column
+    flex-direction: column;
+    line-height: 18px;
 }
 
 .title4-text-title-legends{
@@ -106,7 +108,7 @@ span{
 }
 
 .container-description-title1{
-    margin-top: 40px;
+    margin-top: 50px;
     margin-bottom: 20px;
     width: 75%;
     text-align: center;
@@ -118,8 +120,12 @@ span{
 }
 
 .container-description1{
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     width: 70%;
+}
+
+.container-description1-text{
+    margin-bottom: 20px;    
 }
 
 .text-description1{
@@ -127,14 +133,18 @@ span{
 }
 
 .image-quadrante{
+    margin-top: 50px;
     width: 448px;
     height: 499px;    
 }
 
 .container-description2-title{
+    margin-top: 50px;
     margin-bottom: 20px; 
     text-align: center; 
-    justify-content: center
+    justify-content: center;
+    align-items: center;
+    width: 80%;
 }
 
 .description2-title-text{
@@ -146,11 +156,13 @@ span{
 
 .container-description2{
     flex-direction: row;
-    width: 85%;    
+    width: 100%;
 }
 
 .container-description2-text{
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    text-align: justify;
+    width: 80%;
 }
 
 .description2-text{
@@ -173,7 +185,7 @@ span{
 
 .container-description3-text{
     text-align: center; 
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     width: 70%;
     text-align: justify;
 }
@@ -184,10 +196,9 @@ span{
 }
 
 .container-description4{    
-    margin: 20px; 
-    text-align: center; 
-    margin-bottom: 20px;    
-    width: 55%;
+    margin: 30px; 
+    text-align: center;     
+    width: 60%;
 }
 
 .description4-text{    
@@ -198,8 +209,13 @@ span{
 }
 
 .container-description5{    
-    margin-top: 20px;
-    width: 70%;
+    margin-top: 50px;
+    width: 70%;    
+}
+
+.container-description5-text{    
+    margin-top: 20px;    
+    line-height: 23px;
 }
 
 .description5-text{
@@ -217,6 +233,17 @@ span{
 .description-text6{
     margin-bottom: 10px;
     font-size: 14px;
+}
+
+.btnCustom{
+    background-color: black;        
+    transition: .4s ease all;
+    color: white
+}
+
+.btnCustom:hover{
+    color: white;
+    opacity: 0.7;
 }
 
 @media (max-width: 992px) {
@@ -251,27 +278,34 @@ span{
         width: 100%;
         margin-left: 0;
         margin-top: 20px;
+        line-height: 16px;
     }
+    
     .title3{
-        font-size: 16px;
+        font-size: 14px;
         font-weight: bold;
     }
 
     .container-title4-legends-top{
         display: flex; 
+        flex: 1;
         flex-direction: column; 
         justify-content: center; 
+        align-items: center;
+        margin-left: 50%;
         margin-top: 50px;        
         margin-bottom: 0px;        
-        margin-left: 170px;        
     }
 
     .container-title4-legends-bottom{
         display: flex; 
+        flex: 1;
         flex-direction: column; 
         justify-content: center;
+        text-align: right;
         margin-top: -240px;
-        margin-left: 20px;
+        align-items: center;
+        margin-right: 50%;
     }
     
     .container-title4-texts{
@@ -293,7 +327,7 @@ span{
         height: 45px; 
         border: 2px solid; 
         color: #CCCCCC; 
-        margin: -10px;
+        margin: -10px;        
     }
     
     .circle-graphic{
@@ -301,6 +335,7 @@ span{
         height: 40px;        
         background-color: #CCCCCC;
         border-radius: 40px;
+        position: relative;
     }
 
     .container-description-title1{
@@ -311,7 +346,7 @@ span{
     }
 
     .description-title1{
-        font-size: 22px; 
+        font-size: 18px; 
         font-weight: 900;
     }
 
@@ -319,6 +354,10 @@ span{
         margin-bottom: 20px;
         width: 100%;
         text-align: justify;
+    }
+
+    .container-description1-text{
+        margin-bottom: 20px;        
     }
     
     .text-description1{
@@ -338,6 +377,8 @@ span{
         justify-content: center;
         margin-bottom: 400px;
         margin-top: -420px;
+        width: 100%;
+        margin-left: 0;
     }
     
     .description2-title-text{
@@ -348,7 +389,8 @@ span{
     }
 
     .container-description2-text{
-        margin-bottom: 20px
+        margin-bottom: 20px;
+        width: 100%;
     }
     
     .description2-text{
@@ -373,25 +415,24 @@ span{
     .container-description3-text{
         margin-top: 30px;
         text-align: center; 
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         width: 100%;
         text-align: justify;
     }
     
     .description3-text{
-        font-size: 18px; 
+        font-size: 17px; 
         text-align: justify
     }
 
     .container-description4{    
-        margin: 20px; 
+        margin: 40px; 
         text-align: center; 
-        margin-bottom: 20px;    
-        width: 90%;        
+        width: 100%;
     }
     
     .description4-text{    
-        font-size: 26px; 
+        font-size: 24px; 
         font-weight: bold;     
         letter-spacing: 0em; 
         line-height: 1em;
@@ -401,6 +442,11 @@ span{
         margin-top: 20px;
         width: 100%;
         text-align: justify;
+    }
+
+    .container-description5-text{    
+        margin-top: 20px;    
+        line-height: 23px;
     }
     
     .description5-text{
@@ -419,6 +465,11 @@ span{
         margin: 10px;
         margin-top: 25px;
         margin-bottom: 25px;
+    }
+
+    .description-text6{
+        margin-bottom: 10px;
+        font-size: 12px;
     }
     
 }

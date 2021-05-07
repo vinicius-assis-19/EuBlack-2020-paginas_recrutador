@@ -4,7 +4,7 @@ html{
 
 @font-face {
     font-family: 'gotham black';
-    src: url('../../fontes/gotham-black.otf') format('opentype');
+    src: url('https://paginas-recrutador.s3.amazonaws.com/gotham-black.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -73,7 +73,8 @@ span{
 .container-title4-texts{
     width: 140px;
     display: flex; 
-    flex-direction: column
+    flex-direction: column;
+    line-height: 18px;
 }
 
 .title4-text-title-legends{
@@ -217,13 +218,13 @@ span{
 }
 
 .container-description4-title{
-    margin-top: 70px;
+    margin-top: 30px;
     margin-bottom: 20px;
     text-align: center;  
 }
 
 .container-description4-text{
-    margin-top: 70px;
+    margin-top: 30px;
     margin-bottom: 20px;
     text-align: center;   
 }
@@ -422,6 +423,17 @@ span{
     background-color: #04BF39;
 }
 
+.btnCustom{
+    background-color: #04BF39;        
+    transition: .4s ease all;
+    color: white
+}
+
+.btnCustom:hover{
+    color: white;
+    opacity: 0.7;
+}
+
 .container-description9{
     margin-top: 50px;
     width: 48%;
@@ -458,13 +470,43 @@ span{
     background-color: grey;
 }
 
-.container-description10-text{
+.container-description10-infos{
     display: flex;
     flex: 1;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     margin: 10px;
+    margin-top: 20px;
+}
+
+.container-description10-text{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    line-height: 20px;
+    margin-bottom: -80px;
+}
+
+.container-description10-contact{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;    
+    line-height: 20px;
+}
+
+.container-description10-social{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;    
+    line-height: 20px;    
+    margin-top: -90px;
 }
 
 .description10-nome{
@@ -486,7 +528,8 @@ span{
 }
 
 .description10-perfil{
-    font-size: 18px
+    font-size: 18px;
+    margin-left: 10px;
 }
 
 .description10-text{
@@ -551,19 +594,24 @@ span{
 
     .container-title4-legends-top{
         display: flex; 
+        flex: 1;
         flex-direction: column; 
         justify-content: center; 
+        align-items: center;
+        margin-left: 50%;
         margin-top: 50px;        
         margin-bottom: 0px;        
-        margin-left: 170px;        
     }
 
     .container-title4-legends-bottom{
         display: flex; 
+        flex: 1;
         flex-direction: column; 
         justify-content: center;
+        text-align: right;
         margin-top: -240px;
-        margin-left: 20px;
+        align-items: center;
+        margin-right: 50%;
     }
     
     .container-title4-texts{
@@ -682,7 +730,7 @@ span{
     
     .container-description3-text{        
         text-align: center; 
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         width: 100%;
         text-align: center;
     }
@@ -700,7 +748,7 @@ span{
     }
     
     .container-description4-title{
-        margin-top: 70px;
+        margin-top: 30px;
         margin-bottom: 20px;
         text-align: center;  
     }
@@ -710,10 +758,11 @@ span{
     }
     
     .container-description4-text{
-        margin-bottom: 20px;
+        margin-top: 10px;
+        margin-bottom: 0;
         text-align: center;
         width: 100%;
-        margin-left: 0;
+        margin-left: 0;        
     }
     
     .description4-text{
@@ -730,7 +779,7 @@ span{
     }
 
     .container-description5{
-        margin-top: 20px;
+        margin-top: 50px;
         width: 100%;
         text-align: center;
     }
@@ -898,12 +947,12 @@ span{
     }
 
     .button-next{
-        font-size: 18px; 
+        font-size: 30px; 
         font-weight: 900;
         margin: 10px;
         margin-top: 25px;
-        margin-bottom: 25px;
-        width: 300px;
+        margin-bottom: 25px;        
+        
     }
 
     .container-description9{
@@ -941,6 +990,17 @@ span{
         border-radius: 214px;
         background-color: grey;
     }
+
+    .container-description10-infos{
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 10px;
+        margin-top: 0;
+    }
     
     .container-description10-text{
         display: flex;
@@ -948,6 +1008,29 @@ span{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        text-align: center;
+        margin-bottom: 0;
+        margin: 10px;        
+    }
+
+    .container-description10-contact{
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .container-description10-social{
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        text-align: center;
+        margin-top: 0;
         margin: 10px;
     }
     

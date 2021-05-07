@@ -4,7 +4,7 @@ html{
 
 @font-face {
     font-family: 'gotham black';
-    src: url('../../fontes/gotham-black.otf') format('opentype');
+    src: url('https://paginas-recrutador.s3.amazonaws.com/gotham-black.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -73,7 +73,8 @@ span{
 .container-title4-texts{
     width: 140px;
     display: flex; 
-    flex-direction: column
+    flex-direction: column;
+    line-height: 18px;
 }
 
 .title4-text-title-legends{
@@ -132,7 +133,7 @@ span{
 
 .container-description-title2{
     margin-top: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     width: 70%;
     text-align: center;
     line-height: 30px;
@@ -181,11 +182,15 @@ span{
     font-size: 18px
 }
 
-.container-description3-title{
-    margin-top: 50px;
+.container-description3{
     text-align: center; 
-    margin-bottom: 20px;
-    width: 67%;    
+    width: 67%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container-description3-title{   
+    margin-bottom: 20px;    
 }
 
 .description3-title{
@@ -197,7 +202,7 @@ span{
 
 .container-description3-text{    
     margin-bottom: 20px;
-    width: 70%;
+    
     text-align: justify;
     line-height: 20px;
 }
@@ -241,13 +246,14 @@ span{
 }
 
 .container-video{
+    flex: 1;    
     margin-top: 30px;
     height: 417px; 
-    width: 908px;
+    width: 100%;
     margin-bottom: 50px;    
     align-items: center;
     justify-content: center;
-    margin-left: 18%;
+    text-align: center;    
 }
 
 .container-description5{    
@@ -350,10 +356,8 @@ span{
     text-align: center;
 }
 
-.container-description7-title{
-    
-    width: 60%;
-    margin-top: 20px; 
+.container-description7-title{    
+    width: 60%;    
     align-items: center; 
     justify-content: center;
     text-align: center;
@@ -421,6 +425,17 @@ span{
     font-size: 14px;
 }
 
+.btnCustom{
+    background-color: black;        
+    transition: .4s ease all;
+    color: white
+}
+
+.btnCustom:hover{
+    color: white;
+    opacity: 0.7;
+}
+
 @media (max-width: 992px) {
 
     .container-title{
@@ -467,19 +482,24 @@ span{
 
     .container-title4-legends-top{
         display: flex; 
+        flex: 1;
         flex-direction: column; 
         justify-content: center; 
+        align-items: center;
+        margin-left: 50%;
         margin-top: 50px;        
         margin-bottom: 0px;        
-        margin-left: 170px;        
     }
 
     .container-title4-legends-bottom{
         display: flex; 
+        flex: 1;
         flex-direction: column; 
         justify-content: center;
+        text-align: right;
         margin-top: -240px;
-        margin-left: 20px;
+        align-items: center;
+        margin-right: 50%;
     }
     
     .container-title4-texts{
@@ -509,6 +529,7 @@ span{
         height: 40px;        
         background-color: #CCCCCC;
         border-radius: 40px;
+        position: relative;
     }
 
     .container-description-title1{
@@ -521,6 +542,7 @@ span{
     .description-title1{
         font-size: 18px; 
         font-weight: bold;
+        line-height: 20px;
     }
 
     .container-description1{
@@ -531,7 +553,7 @@ span{
     
     .text-description1{
         font-size: 18px;
-        text-align: justify;
+        text-align: justify;        
     }
 
     .container-description-title2{
@@ -582,7 +604,13 @@ span{
         font-size: 18px;
         text-align: justify;
     }
-    
+
+    .container-description3{
+        text-align: center; 
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }    
 
     .container-description3-title{
         margin-top: 50px;
@@ -612,7 +640,7 @@ span{
     .container-description4{    
         margin: 0; 
         text-align: center; 
-        margin-bottom: 20px;    
+        margin-bottom: 50px;    
         width: 100%;        
     }
     
@@ -646,7 +674,7 @@ span{
 
     .container-video{
         margin-top: -100px;
-        height: 200px;
+        height: 250px;
         width:100%;
         background-color: black;
         align-items: center;
@@ -655,7 +683,7 @@ span{
     }
 
     .container-description5{
-        margin-top: 20px;
+        margin-top: 50px;
         width: 100%;
         text-align: center;
     }
@@ -690,8 +718,8 @@ span{
         width: 100%;
         border-color: black; 
         border-bottom-style: solid; 
-        margin-top: 50px;         
-        margin-bottom: 50px;         
+        margin-top: 20px;
+        margin-bottom: 20px;
         text-align: center;
     }
 
@@ -722,21 +750,19 @@ span{
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin-top: 100px;
+        margin-top: 50px;
         margin-bottom: 0;
     }
     
-    .container-description7-title{
-        
-        width: 100%;
-        
+    .container-description7-title{        
+        width: 100%;        
         align-items: center; 
         justify-content: center;
         text-align: center;
     }
 
     .description7-title1{
-        font-size: 25px; 
+        font-size: 26px; 
         font-weight: bold; 
         letter-spacing: 0em; 
         line-height: 0.9em
@@ -752,11 +778,11 @@ span{
 
     .container-description7-text{
         flex:1;        
-        width: 70%;
+        width: 100%;
     }
 
     .description7-text{
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .container-description8{

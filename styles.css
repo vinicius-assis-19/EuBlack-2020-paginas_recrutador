@@ -8,7 +8,7 @@ html{
 
 @font-face {
     font-family: 'gotham black';
-    src: url('/fontes/gotham-black.otf') format('opentype');
+    src: url('https://paginas-recrutador.s3.amazonaws.com/gotham-black.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -31,6 +31,7 @@ span{
     align-items: center;        
     margin-bottom: 70px;
     margin-top: -80px;
+    position: relative;
 }
 .container-title1{
     margin-top: 170px;
@@ -71,12 +72,30 @@ span{
 }
 
 .container-title-text2{
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     width: 60%;
     margin-left: 20%;
     text-align: center;
     justify-content: center;
     align-items: center;    
+}
+
+.title-text1{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.title-text2{
+    text-align: center; 
+    margin-bottom: 25px; 
+    font-size: 18px;
+}
+
+.title-text3{    
+    font-size:26px; 
+    font-weight: bold; 
+    text-align: center; 
+    margin-bottom: 50px;
 }
 
 .container-describe1{
@@ -115,22 +134,39 @@ span{
     margin-bottom: 40px;
 }
 
+.text-describe4{
+    font-size: 16PX; 
+    font-weight: bold;
+}
+
 .container-controllers{
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: center;    
 }
 
 .custom-input{
-    margin: 10px; 
+    margin: 5px; 
     width: 350px;
+    height: 55px;
+}
+
+.btnCustom{
+    background-color: black;        
+    transition: .4s ease all;
+    color: white
+}
+
+.btnCustom:hover{
+    color: white;
+    opacity: 0.7;
 }
 
 @media (max-width: 992px) {
     .back-image{
         margin-bottom: -400px; 
-        filter:blur(2px); 
-        opacity: 0.6; 
+        filter:blur(1.5px); 
+        opacity: 0.8; 
         width: 400px; 
         height: 200px;         
     }
@@ -139,7 +175,7 @@ span{
         justify-content: center;
         text-align: center;
         align-items: center; 
-        margin-bottom: 100px;   
+        margin-bottom: 50px;   
         margin-top: -80px;
     }
     .container-title1{
@@ -166,7 +202,35 @@ span{
         text-align: center;
         justify-content: center;
         align-items: center;    
+        line-height: 20px;
     }
+
+    .title-text1{
+        font-size: 18px;
+        font-weight: bold;        
+    }
+
+    .title-text2{
+        text-align: center; 
+        margin-bottom: 25px; 
+        font-size: 16px;
+    }
+
+    .title-text3{    
+        font-size:18px; 
+        font-weight: bold; 
+        text-align: center; 
+        margin-bottom: 50px;
+    }
+
+    .text-describe1{
+        font-family: 'gotham black';
+        font-size: 59px; 
+        font-weight: bold; 
+        color: rgb(255,200,36); 
+        line-height: 60px;
+    }
+
     .container-title-text2{
         margin-bottom: 15px;
         width: 100%;
@@ -176,9 +240,25 @@ span{
         align-items: center;    
     }
 
+    .text-describe2{
+        font-size: 18px; 
+        font-weight: bold;
+    }
+
     .container-describe3{
         width: 100%;
         margin-bottom: 40px;
+        text-align: justify;
+    }
+
+    .text-describe3{
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .text-describe4{
+        font-size: 18PX; 
+        font-weight: bold;
     }
 
     .container-controllers{
